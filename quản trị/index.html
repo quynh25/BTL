@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div>
+        <div style="margin: 40px 10px;">
+            <button id="toggle" class="btn" style="width: 100px;height: 30px;" type="button">Thêm mới</button>
+            <span style="margin-left: 65em;">
+                <input type="text">
+                <button class="btn" style="width: 100px;height: 30px;" type="button">Tìm kiếm</button>
+            </span>
+
+        </div>
+
+    </div>
+    <div>
+        <h1 style="text-align: center; ">Danh sách CV</h1>
+
+    </div>
+    <!-- <div>
+
+    </div> -->
+    <!-- them -->
+    <form class="none" id="formAdd" action="">
+        <table style="width: 350px ; height: 280px; margin : auto">
+            <tr>
+                <td class="df">
+                    <label for="">Tên thành viên</label>
+                    <input type="text" name="fullname" >
+                    
+                </td>
+            </tr>
+            <tr>
+                <td class="df">
+                    <label for="">Ngày sinh</label>
+                    <input type="text" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td class="df">
+                    <label for="">Giới tính</label>
+                    <input type="text" name="sex">
+                </td>
+            </tr>
+            <tr>
+                <td class="df">
+                    <label for="">Kinh nghiệm</label>
+                    <input type="text" name="exp">
+                </td>
+            </tr>
+            <tr>
+                <td class="df">
+                    <label for="">Dự án</label>
+                    <input type="text" name="project">
+                </td>
+            </tr>
+            <tr>
+                <td class="df">
+                    <label for="">CV</label>
+                    <input type="text" name="cv">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="add" style="width: 100px;" type="button">Thêm</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!-- tiêu đề của bảng -->
+    <table style="padding-top : 0 ;border: solid 0.5px black; border-collapse: collapse;">
+        <thead>
+            <tr style="color: #f0760c; font-size: 20px; padding : 10px 0">
+                <td>Mã số</td>
+                <td>Tên thành viên</td>
+                <td>Ngày sinh</td>
+                <td>Giới tính</td>
+                <td>Kinh nghiệm</td>
+                <td>Dự án</td>
+                <td>CV</td>
+                <td>Thao tác</td>
+            </tr>
+        </thead>
+        <tbody id="list">
+            <!-- render js -->
+        </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
