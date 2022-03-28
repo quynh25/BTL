@@ -11,7 +11,7 @@ table, tr, td{
 }
 table{
     margin-top: 50px;
-    width: 100%;
+    width: 100vw;
     height: 25px;   
 }
 td {

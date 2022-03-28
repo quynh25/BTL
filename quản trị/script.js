@@ -118,11 +118,11 @@ add.addEventListener("click", (e) => {
 });
 
 // xóa
-var gar = document.getElementById("gar");
+// var gar = document.getElementById("gar");
 
-gar.addEventListener("click", (e) => {
-  e.preventDefault();
-  gar.onclick = function () {
-    confirm("Bạn có chắc chắn muốn xóa nó không!");
-  };
-});
+// gar.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   gar.onclick = function () {
+//     confirm("Bạn có chắc chắn muốn xóa nó không!");
+//   };
+// });
