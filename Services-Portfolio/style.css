@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#ser1{
+    width: 1476.1px;
+    height: 950px;
+    background-color: #fff5ec;
+    text-align: center;
+   
+}
+#ser1 h1{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+#ser1 .line{
+    width: 38px;
+    height: 3.5px;
+    background-color:#dc965a;
+    margin: 0 auto 20px ;
+}
+#ser1  p{
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    margin-left: 30vh;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*  */
+#ser1 .column-layout{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 150px;
+
+}
+#ser1 .column-layout .item {
+    width: 376px;
+    height: 335px;
+    background-color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 50px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+ 
+
+}
+#ser1 .column-layout .item i {
+    font-size: 50px;
+    color:#dc965a;
+    padding: 20px 0;
+}
+#ser1 .column-layout .item p{
+    font-size: 18px;
+    line-height: 20px;
+}
+#ser1 .column-layout .item:hover {
+    background: #dc965a;
+    color: #fff;
+}
+#ser1 .column-layout .item:hover i{
+    
+    color: #fff;
+}
+/*  */
+#ser2{
+    margin-top: 100px;
+    width: 1476.1px;
+    height: 700px;
+    background-color: white;
+}
+#ser2 h3{
+    margin: 10px 0px;
+}
+#ser2 .line{
+    width: 25px;
+    height: 3px;
+    background-color:#dc965a;
+    margin: 0px ;
+}
+#services #ser2{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 150px;
+}
+#ser2 .col {
+    /* width: 376px;
+    height: 335px; */
+    background-color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 50px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+
+}
+#ser2 .col .box{
+    width: 376px;
+    background-color: #dc965a;
+}
