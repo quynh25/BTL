@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.7;
+    color: #5e6472;
+}
+.nav {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-list {
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li {
+    border-right: 1px solid rgba(15,10,10,.1);
+    border-left: 1px solid rgba(15,10,10,.1);
+    padding: 0 30px;
+}
+
+.nav-list a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 70px;
+}
+.Home {
+    background-color: rgb(247, 143, 83);
+    width: 100%;
+    height: 600px;
+    display: grid;
+}
+
+.name {
+    margin: 0 auto;
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 200px;
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+}
+
+
+.cv {
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    /* flex-basis: 40%; */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cv h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1c1d24;
+    margin-bottom: 15px;
+}
+
+.cv .media {
+    padding: 10px 0;
+    line-height: normal;
+}
+
+.media {
+    display: flex !important;
+    align-items: flex-start;
+}
+
+.cv .media label {
+    margin: 0;
+    color: #090a0c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex: 0 0 90px;
+    border-right: 1px solid #c1c1c1;
+    max-width: 90px;
+}
+
+.cv .media p {
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-size: 1.5rem;
+}
+.cv1 {
+    background-color: rgb(228, 202, 183);
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-basis: 30%;
+
+}
+.cv2 {
+    background-color: rgb(248, 208, 176);
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-basis: 30%;
+
+}
+.cv3 {
+    background-color: rgb(243, 219, 196);
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-basis: 30%;
+
+}
