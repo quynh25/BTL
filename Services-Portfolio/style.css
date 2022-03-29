@@ -49,6 +49,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 #ser1 .column-layout .item i {
   font-size: 50px;
@@ -68,14 +69,12 @@
 }
 /*  */
 #ser2 {
-  margin-top: 100px;
+  margin-top: 20px;
   width: 1476.1px;
   height: 700px;
   background-color: white;
 }
-#ser2 h3 {
-  margin: 10px 0px;
-}
+
 #ser2 .line {
   width: 25px;
   height: 3px;
@@ -94,9 +93,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 20px;
+  
 }
 #ser2 .col h3 {
   font-size: 27px;
+  margin: 10px 0px;
 }
 #ser2 .col .box {
   width: 375px;
@@ -106,6 +107,7 @@
   color: #fff;
   padding: 0 20px;
   border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 #ser2 span {
   font-size: 14px;
@@ -197,12 +199,13 @@ li {
   text-align: center;
   font-size: 17px;
   line-height: 28px;
+  padding-bottom: 25px;
 }
 /*  */
 #portfolio .por2 .por2-layout {
   display: flex;
   justify-content: space-around;
-  padding: 30px 150px;
+  padding: 10px 150px;
 }
 #portfolio .por2 .por2-layout .box-img {
   background-color: white;
@@ -212,14 +215,14 @@ li {
   width: 400px;
   height: 580px;
   color: black;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0px 10px;
-  /* box-shadow: #1c1d24 ; */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3) ;
 }
 
 #portfolio .por2 .por2-layout .box-img img {
   width: 350px;
-  height: 480px;
+  height: 490px;
   padding: 20px 10px;
 }
 #portfolio .por2 .por2-layout .box-img h2 {
@@ -233,8 +236,7 @@ li {
 #portfolio .por2 .por2-layout .box-img:hover h2 {
   color: #dc965a;
 }
-/* 
-.box-img:hover .work-hover{
-  background: #dc965a;
-  z-index : 2;
-} */
+#portfolio .por2 .por2-layout .box-img:hover img{
+
+  transform: scale(0.8,0.8);
+}
