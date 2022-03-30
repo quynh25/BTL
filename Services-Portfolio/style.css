@@ -49,7 +49,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 #ser1 .column-layout .item i {
   font-size: 50px;
@@ -93,7 +93,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 20px;
-  
 }
 #ser2 .col h3 {
   font-size: 27px;
@@ -107,7 +106,7 @@
   color: #fff;
   padding: 0 20px;
   border-radius: 6px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 #ser2 span {
   font-size: 14px;
@@ -144,19 +143,19 @@ li {
   line-height: 28px;
 }
 
-#ser2 .skill .skill-bar {
+ .skill-bar {
   position: relative;
   background: #1c1d24;
 }
 
-#ser2 .skill .skill-bar .skill-bar-in {
+.skill-bar-in {
   width: 80px;
   height: 10px;
   position: relative;
   transition: all 0.55s ease;
 }
 
-#ser2 .skill .skill-bar .skill-bar-in span {
+ .skill-bar-in span {
   position: absolute;
   right: 0;
   bottom: 15px;
@@ -165,7 +164,7 @@ li {
   color: #fff;
 }
 
-#ser2 .skill .skill-bar .skill-bar-in span:after {
+.skill-bar-in span:after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -182,32 +181,36 @@ li {
 #portfolio {
   background-color: #fff5ec;
   width: 1476.1px;
-  height: 1500px;
+  height: 1700px;
 }
-#portfolio .por1 h1 {
+.por1 h1 {
   text-align: center;
   font-size: 45px;
   padding: 15px 0;
 }
-#portfolio .por1 .line {
+ .por1 .line {
   width: 38px;
   height: 3.5px;
   background-color: #dc965a;
   margin: 0 auto 20px;
 }
-#portfolio .por1 p {
+.por1 p {
   text-align: center;
   font-size: 17px;
   line-height: 28px;
   padding-bottom: 25px;
 }
 /*  */
-#portfolio .por2 .por2-layout {
+#portfolio .por2 {
+  width: 1476.1px;
+  height: 1300px;
+}
+.por2-layout {
   display: flex;
   justify-content: space-around;
   padding: 10px 150px;
 }
-#portfolio .por2 .por2-layout .box-img {
+ .box-img {
   background-color: white;
   text-align: left;
   cursor: pointer;
@@ -217,26 +220,97 @@ li {
   color: black;
   padding: 0 15px;
   margin: 0px 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3) ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-#portfolio .por2 .por2-layout .box-img img {
+.box-img img {
   width: 350px;
   height: 490px;
   padding: 20px 10px;
 }
-#portfolio .por2 .por2-layout .box-img h2 {
+.box-img h2 {
   font-size: 20px;
   line-height: 24px;
   padding: 20px 10px;
 }
-#portfolio .por2 .por2-layout .box-img span {
+.box-img span {
   padding: 0px 10px;
 }
-#portfolio .por2 .por2-layout .box-img:hover h2 {
+.box-img:hover h2 {
   color: #dc965a;
 }
-#portfolio .por2 .por2-layout .box-img:hover img{
+.box-img:hover img {
+  transform: scale(0.8, 0.8);
+}
+/*  */
+.por3 {
+  height: 450px;
+  width: 1476.1px;
+  background-color: #fff;
+}
+.por3 .slider {
+  display: flex;
+  padding: 100px 150px;
+}
+.avt {
+  display: flex;
+  width: 600px;
+  height: 150px;
+  padding: 0 20px;
+}
+.avt-img {
+  width: 140px;
+  height: 150px;
+  padding: 0px 10px;
+  border: #dc965a 2px solid;
+}
+.avt .avt-img img {
+  width: 140px;
+  height: 170px;
+  padding: 10px 0;
+}
+.avt-intro {
+  padding: 0 25px;
+}
+.avt-intro p {
+  font-size: 16px;
+  line-height: 27px;
+}
+.avt-intro h6 {
+  font-size: 15px;
+  line-height: 28px;
+  padding: 6px 0;
+}
 
-  transform: scale(0.8,0.8);
+.avt-intro span {
+  font-size: 8px;
+  line-height: 10px;
+}
+.avt-intro i {
+  color: #ffc800;
+  font-size: 9px;
+  padding: 0 3px;
+  /* border-radius: 20%; */
+}
+.avt-intro .value {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 45px;
+  height: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button span {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: 1px solid #dc965a;
+  cursor: pointer;
 }
