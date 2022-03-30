@@ -248,14 +248,14 @@ li {
   width: 1476.1px;
   background-color: #fff;
 }
-.por3 .slider {
+.por3 .avatar {
   display: flex;
   padding: 100px 150px;
 }
 .avt {
   display: flex;
   width: 600px;
-  height: 150px;
+  height: 130px;
   padding: 0 20px;
 }
 .avt-img {
@@ -298,19 +298,4 @@ li {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   width: 45px;
   height: 20px;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.button span {
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  border: 1px solid #dc965a;
-  cursor: pointer;
 }
