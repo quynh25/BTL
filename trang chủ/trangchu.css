@@ -4,41 +4,42 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    /* background-color: rgb(214, 178, 178) */
+    /* background-color: rgba(240, 207, 207, 0.2); */
+    opacity: 0.8
 }
-.nav{
-    height: 80px;
-    margin-top: 30px;
-    
-}
-.home h1{   
+.home h2{   
     margin-left: 200px;
 }
-.option{
-    font-size: 20px;
+.login{
+    margin-right: 200px;
+   
 }
-.login a{
+ .register{
+    margin-right: 15%;
+}
+.login a,.register a{
     text-decoration: none;
-    color: #000
-}
-.register a{
-    text-decoration: none;
-   color: #000
-}
-.title h3{
-    margin-top:100px;
-    height: 80px;
-    
+    font-size: 22px;
+   
 }
 
 /* content */
-.card{
-    margin-top:50px;
+.title h3{
+    margin-top:90px;
+    height: 70px;    
+}
+/* .card{
+    /* margin-top:50px; 
+    
+} */
+.content{
+    margin-bottom: 80px;
+    
 }
 .column1, .column2, .column3{
-
-    background-color: rgb(250, 232, 235); 
-    border: 1px solid rgb(82, 78, 74);
+    
+    background-color: rgba(164, 235, 231, 0.2); 
+    border: 1px solid rgb(112, 97, 82);
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     border-radius: 15px;
     margin-top: 80px;
@@ -50,6 +51,7 @@ body{
     margin-top:40px;
     font-size: 17px;  
     box-shadow: 0 0 15px rgba(0,0,0,0.3);  
+    /* background-color: rgba(137, 235, 222, 0.3) */
 }
 .content .img img{
     height: 240px ;
@@ -61,13 +63,10 @@ body{
     
 }
 .content button{
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-bottom: 10px;
-    background-color:#c7dbd5;
-    color:#000
+    margin-top: 15px;
+    margin-bottom:15px;
+    background-color:rgb(241, 250, 248);
+    color: #000
 }
 .content button:hover{
     background-color: rgb(243, 115, 69)
@@ -79,46 +78,50 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 80px;
-    /* background-color: #2f3136; */
-    /* color: rgb(211, 195, 195); */
+    margin-top: 50px;
 }
+
+.links{
+    margin-bottom: 25px;
+}
+
 .school{
-   padding: 30px;
-   font-size: 17px;
-}
-.address{
-    background-color: rgb(39, 34, 34);
-    color: #fff;
-}
-.address1{
-    padding: 30px;
-    font-size: 17px;
- }
- .address1 span {
-     margin-left: 200px;
- }
-.address2{
    padding: 30px;
    font-size: 17px;
 }
 .school a{
     font-size:20px;
     text-decoration: none;
-    margin-left: 250px;
+    color: #fff;
+   
 }
 .school a:hover{
     color: rgb(204, 90, 48);
 }
 .address-links{
     display: flex;
- 
+    margin-right: 170px;
 }
+.address1 span, .address2 span{
+    color: #fff;
+}
+
 .address-links a{
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
+    color: #fff;
 }
 .address-links a:hover{
-    color: rgb(204, 90, 48);
+    color: rgb(230, 147, 117);
+}
+.img-logo img{
+    width: 20em;
+    height: 11em;
+    margin-left: 80px;
+}
+#footer{
+    margin-top:50px;
+    padding-bottom:20px;
+    background-color:rgb(53, 53, 219)
 }
