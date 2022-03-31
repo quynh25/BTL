@@ -1,7 +1,5 @@
 var list = document.querySelector("#list");
-var toggle = document.querySelector("#toggle");
-var formAdd = document.querySelector("#formAdd");
-
+let idChanging
 var listTv = [
     {
         id: 01,
@@ -10,52 +8,58 @@ var listTv = [
         sex: "Nữ",
         exp: "2 năm",
         project: "",
-        cv: "link",
+        cv: "https://www.google.com.vn/?gws_rd=ssl",
     },
     {
         id: 02,
-        fullname: "Nguyễn Thị Xuân",
-        date: "21/01/2002",
-        sex: "Nữ",
-        exp: "5 năm",
-        project: "",
-        cv: "link",
-    },
-    {
-        id: 03,
         fullname: "Trần Thị Quỳnh",
         date: "25/05/2002",
         sex: "Nữ",
         exp: "1 năm",
         project: "",
-        cv: "link",
+        cv: "https://kenh14.vn/",
+    },
+    {
+        id: 03,
+        fullname: "Nguyễn Thị Xuân",
+        date: "21/01/2002",
+        sex: "Nữ",
+        exp: "5 năm",
+        project: "",
+        cv: "https://www.youtube.com/",
     },
 ];
 
-let htmls = listTv.map((tv, i) => {
-    return `
-    <tr>
-            <td>${tv.id}</td>
-            <td>${tv.fullname}</td>
-            <td>${tv.date}</td>
-            <td>${tv.sex}</td>
-            <td>${tv.exp}</td>
-            <td>${tv.project}</td>
-            <td><a href="">${tv.cv}</a></td>
-            <td>
-                <p class="icon" >
-                    
-                    <a href=""> <i class="fas fa-pencil-alt"></i></a>
-                    <a  id="gar" href="#"><i class="fas fa-trash-alt"></i></a>
-                </p>
+function render(){
+    let htmls = listTv.map((tv, i) => {
+        return `
+        <tr>
+                <td>${tv.id}</td>
+                <td>${tv.fullname}</td>
+                <td>${tv.date}</td>
+                <td>${tv.sex}</td>
+                <td>${tv.exp}</td>
+                <td>${tv.project}</td>
+                <td><a target="_blank" href="${tv.cv}">link</a></td>
+                <td>
+                    <p class="icon" >
+                        
+                        <a href="#" onclick="editInfo(this.id)" id="${tv.id}"> <i  class="fas fa-pencil-alt"></i></a>
+                        <a onclick="deleteInfo(this.id)" id="${tv.id}" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </p>
+    
+                </td>
+            </tr>
+        `;
+    });
 
-            </td>
-        </tr>
-    `;
-});
+    list.innerHTML = htmls.join("");
+
+}
+
+
 //
-list.innerHTML = htmls.join("");
-
+var toggle = document.querySelector("#toggle");
 var isToggle = false;
 toggle.addEventListener("click", () => {
     isToggle = !isToggle;
@@ -75,25 +79,27 @@ inputExp = document.querySelector("input[name=exp]");
 inputProjec = document.querySelector("input[name=project]");
 inputCv = document.querySelector("input[name=cv]");
 
-add = document.getElementById("add");
+// var formAdd = document.querySelector("#formAdd");
+
+let add = document.getElementById("add");
 
 function checkValue() {
-  if (inputFullName.value == "") {
-      return false;
-  }
+    if (inputFullName.value == "") {
+        return false;
+    }
 
-  if (inputDate.value == "") {
-      return false;
-  }
+    if (inputDate.value == "") {
+        return false;
+    }
 
-  if (inputCv.value == "") {
-      return false;
-  }
-  if (inputSex.value == "") {
-      return false;
-  }
+    if (inputCv.value == "") {
+        return false;
+    }
+    if (inputSex.value == "") {
+        return false;
+    }
 
-  return true;
+    return true;
 }
 
 add.addEventListener("click", (e) => {
@@ -112,41 +118,36 @@ add.addEventListener("click", (e) => {
 
         listTv.push(newTv);
 
-        let htmls = listTv.map((tv, i) => {
-            return `
-              <tr>
-                      <td>${tv.id}</td>
-                      <td>${tv.fullname}</td>
-                      <td>${tv.date}</td>
-                      <td>${tv.sex}</td>
-                      <td>${tv.exp}</td>
-                      <td>${tv.project}</td>
-                      <td><a href="">${tv.cv}</a></td>
-                      <td>
-                          <p class="icon">
-                              
-                              <a href=""> <i class="fas fa-pencil-alt"></i></a>
-                              <a href="#"><i class="fas fa-trash-alt"></i></a>
-                          </p>
-          
-                      </td>
-                  </tr>
-              `;
-        });
-        //
-        list.innerHTML = htmls.join("");
+       render()
     } else {
-        alert("Dien day du thong tin");
+        alert("Điền đầy đủ thông tin");
     }
 });
+function deleteInfo(id){
+    listTv = listTv.filter(tv => tv.id != id )
 
-// xóa
-var gar = document.getElementById("gar");
+    render()
 
-gar.addEventListener("click", (e) => {
-  e.preventDefault();
-  gar.onclick = function () {
-    confirm("Bạn có chắc chắn muốn xóa nó không!");
-  };
-});
+}
+
+function editInfo(id){
+    console.log("Dang xoa dong thu " + id)
+    let sv = listTv.filter(tv => tv.id == id)[0]
+ 
+    idChanging = id
+    inputFullName.value = sv.fullname
+    inputDate.value = sv.date
+    inputSex.value = sv.sex
+    inputExp.value = sv.exp 
+    inputProjec.value = sv.project 
+    inputCv.value = sv.cv
+    isToggle = true;
+    if (isToggle) {
+        formAdd.classList.remove("none");
+        formAdd.classList.add("block");
+    } 
+    
+}
+render();
+
 
