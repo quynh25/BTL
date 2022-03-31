@@ -17,10 +17,7 @@ table {
     margin: 50px 0px;
     width: 900px;
 }
-/* .table>:not(:first-child) {
-    border-top: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
-} */
+
 td {
     width: 12.5%;
     text-align: center;
