@@ -1,25 +1,33 @@
-body{
+body {
     position: relative;
     background-color: bisque;
     margin: 0;
 }
-table, tr, td{
-    
-    border: solid 0.5px black;
-    border-collapse: collapse;
-    
+h1 {
+    padding: 7px 0px;
 }
-table{
-    margin-top: 50px;
-    width: 100vw;
-    height: 25px;   
+.btn {
+    margin: 50px 20px 20px 20px;
+    width: 100px;
+    height: 35px;
+    background-color: #dc965a;
+    text-align: center;
 }
+table {
+    margin: 50px 0px;
+    width: 900px;
+}
+/* .table>:not(:first-child) {
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+} */
 td {
     width: 12.5%;
     text-align: center;
+    height: 20px;
 }
-i{
-    font-size: 18px;
+i {
+    font-size: 16px;
 }
 .icon a {
     width: 30px;
@@ -28,7 +36,6 @@ i{
     background: #fff;
     border-radius: 50%;
     font-size: 1.5rem;
-    
     color: #1c1d24;
     margin-right: 8px;
     display: inline-flex;
@@ -51,22 +58,22 @@ i{
 
 .btn:hover {
     background: black;
-} 
+    color: #fff;
+}
 
-.df{
+.df {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     border: none;
-    font-size: 20px ;
+    font-size: 18px;
     line-height: 20px;
 }
 
-
-.none{
+.none {
     display: none;
 }
-.block{
+.block {
     display: block;
 }
