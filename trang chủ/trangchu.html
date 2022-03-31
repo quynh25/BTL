@@ -5,138 +5,259 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="trangchu.css">
     
 </head>
 <body>
     <!-- header -->
-    <div class="container-fluid" >
-        <div class="row nav" >
-            <div class="col-md-8 home">
-                <h1>HOME</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item home">
+                <h1 class="nav-link active" aria-current="page" href="#">Home</h1>
+              </li>
+            </ul>
+            <div class="navbar-text login">
+                <a href="#">Login</a> 
+              </div>
+            <div class="navbar-text register">
+              <a href="#">Register</a> 
             </div>
-            <div class="col-md-4">
-                <div class="row option" >
-                    <div class="col-md-6 login">
-                        <a href="#">Login</a>
-                    </div>
-                    <div class="col-md-6 register">
-                        <a href="#">Register</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 title">
+                <h3 class="text-center">
+                    WELCOME TO THE RESUME SYSTEM OF GROUP 5
+                </h3>
             </div>
         </div>
     </div>
 
-<!-- content -->
-    <div class="container-fluid">
-	<div class="row title">
-		<div class="col-md-12">
-            <h2>WELCOME TO RESUME SYSTEM OF GROUP 5</h2>
-		</div>
-	</div>
-    </div>
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 content">
+                <div class="row column1">
+                    <div class="col-md-4 cv1">
+                        <div class="card img">
+                            <img class="card-img-top img1"  src="ảnh/cv1.jpg" />
+                            <div class="card-block info1">
+                                <h5 class="card-title">
+                                    Nguyễn Thị Huyền
+                                </h5>
+                                <p class="card-text ">
+                                    <div class="media">
+                                        <span>date of birth:</span>
+                                        <span>09/04/2001</span>
+                                    </div>
+                                </p>
 
+                                <p>
+                                    <div class="media">
+                                        <span>Age:</span>
+                                        <span>21 tuổi</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="media">
+                                        <span>Address:</span>
+                                        <span>HÀ NỘI</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary btn1" href="#">VIEW</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card img">
+                            <img class="card-img-top" src="ảnh/cv3.jpg" />
+                            <div class="card-block info2">
+                                <h5 class="card-title">
+                                    Trần Thị Quỳnh
+                                </h5>
+                                <p class="card-text">
+                                    <div class="media">
+                                        <span>Date of birth:</span>
+                                        <span>21/01/2002</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="media">
+                                        <span>Age:</span>
+                                        <span>20 tuổi</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="media">
+                                        <span>Address:</span>
+                                        <span>HÀ NỘI</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">VIEW</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="ảnh/cv2.jpg" />
+                            <div class="card-block">
+                                <h5 class="card-title">
+                                    Nguyễn Thị Xuân
+                                </h5>
+                                <p class="card-text">
+                                    <div class="media">
+                                        <span>Date of birth:</span>
+                                        <span>21/01/2002</span>
+                                    </div>               
+                                </p>
+                                <p>
+                                    <div class="media">
+                                        <span>Age:</span>
+                                        <span>20 tuổi</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="media">
+                                        <span>Address:</span>
+                                        <span>HÀ NỘI</span>
+                                    </div>
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="#">VIEW</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="row content">
-                            <div class="column1">
-                                <div class="cv1">
-                                    <div class="img">                        
-                                        <img src="ảnh/cv1.jpg" >
-                                    </div>
-                                    <div class="info1">
-                                        <h3>Nguyễn Thị Huyền</h3>  <br>            
-                                        <div class="media">
-                                            <span>date of birth:</span>
-                                            <span>09/04/2001</span>
+                        <div class="row ">
+                            <div class="content">
+                                <div class="column1">
+                                    <div class="cv1">
+                                        <div class="img">                        
+                                            <img src="ảnh/cv1.jpg" class="img-fluid">
                                         </div>
-                                        <div class="media">
-                                            <span>Age:</span>
-                                            <span>20 tuổi</span>
+                                        <div class="info1">
+                                            <h3>Nguyễn Thị Huyền</h3>  <br>            
+                                            <div class="media">
+                                                <span>date of birth:</span>
+                                                <span>09/04/2001</span>
+                                            </div>
+                                            <div class="media">
+                                                <span>Age:</span>
+                                                <span>21</span>
+                                            </div>
+                                            
+                                            <div class="media">
+                                                <span>Address:</span>
+                                                <span>HÀ NỘI</span>
+                                            </div>
                                         </div>
-                                        
-                                        <div class="media">
-                                            <span>Address:</span>
-                                            <span>HÀ NỘI</span>
-                                        </div>
-                                    </div>
-                                </div>                
-                                <button class="btn1">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row content">
-                            <div class="column2" >
-                
-                                <div class="cv2">
-                                    <div class="img">
-                                        <img src="ảnh/cv3.jpg">
-                                    </div>
-                                    <div class="infor2">
-                                        <h3>Trần Thị Quỳnh</h3><br>
-                                        <div class="media">
-                                            <span>Date of birth:</span>
-                                            <span>21/01/2002</span>
-                                        </div>
-                                        <div class="media">
-                                            <span>Age:</span>
-                                            <span>20 tuổi</span>
-                                        </div>
-                                        
-                                        <div class="media">
-                                            <span>Address:</span>
-                                            <span>HÀ NỘI</span>
-                                        </div>
+                                    </div>                
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-primary btn1" type="button">View</button>
                                     </div>
                                 </div>
-                                <button class="btn2">View</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="row content">
-                            <div class="column3">
-                                <div class="cv3">
-                                    <div class="img">
-                                        <img src="ảnh/cv2.jpg">
+                        <div class="row">
+                            <div class="content">
+                                <div class="column2" >
+                                    <div class="cv2">
+                                        <div class="img">
+                                            <img src="ảnh/cv3.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="infor2">
+                                            <h3>Trần Thị Quỳnh</h3><br>
+                                            <div class="media">
+                                                <span>Date of birth:</span>
+                                                <span>21/01/2002</span>
+                                            </div>
+                                            <div class="media">
+                                                <span>Age:</span>
+                                                <span>20</span>
+                                            </div>
+                                            
+                                            <div class="media">
+                                                <span>Address:</span>
+                                                <span>HÀ NỘI</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="infor3">
-                                        <h3>Nguyễn Thị Xuân</h3><br>
-                                        <div class="media">
-                                            <span>Date of birth:</span>
-                                            <span>21/01/2002</span>
-                                        </div>
-                                        <div class="media">
-                                            <span>Age:</span>
-                                            <span>20 tuổi</span>
-                                        </div>
-                                        
-                                        <div class="media">
-                                            <span>Address:</span>
-                                            <span>HÀ NỘI</span>
-                                        </div>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-primary btn2" type="button">View</button>
                                     </div>
-                                </div>  
-                                <button class="btn3">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row ">
+                            <div class="content">
+                                <div class="column3">
+                                    <div class="cv3">
+                                        <div class="img">
+                                            <img src="ảnh/cv2.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="infor3">
+                                            <h3>Nguyễn Thị Xuân</h3><br>
+                                            <div class="media">
+                                                <span>Date of birth:</span>
+                                                <span>21/01/2002</span>
+                                            </div>
+                                            <div class="media">
+                                                <span>Age:</span>
+                                                <span>20</span>
+                                            </div>
+                                            
+                                            <div class="media">
+                                                <span>Address:</span>
+                                                <span>HÀ NỘI</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-primary btn3" type="button">View</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- footer -->
     <div class="container-fluid">
         <div class="row">

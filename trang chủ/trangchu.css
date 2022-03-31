@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: rgb(214, 199, 199)
+    /* background-color: rgb(214, 178, 178) */
 }
 .nav{
     height: 80px;
@@ -25,41 +25,35 @@ body{
     text-decoration: none;
    color: #000
 }
-.title h2{
+.title h3{
     margin-top:100px;
     height: 80px;
-    margin-left: 15em;
     
 }
 
 /* content */
+.card{
+    margin-top:50px;
+}
 .column1, .column2, .column3{
-    width: 400px;
-    height: 350px;
-    background-color: #FFF5EC; 
+
+    background-color: rgb(250, 232, 235); 
     border: 1px solid rgb(82, 78, 74);
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     border-radius: 15px;
-    margin-top:80px;
-    margin-left: 100px;
-    
+    margin-top: 80px;
+    /* margin-left: 100px; */
 }
+
 .cv1,.cv2,.cv3{
     display: flex;
     margin-top:40px;
-    font-size: 13px;  
+    font-size: 17px;  
     box-shadow: 0 0 15px rgba(0,0,0,0.3);  
 }
-
 .content .img img{
-    height: 230px ;
-    width: 200px;
-    
-}
-
-.content{
-    display:flex;
-    
+    height: 240px ;
+    width: 230px;
 }
 .content img{
     margin-right: 20px;  
@@ -68,17 +62,17 @@ body{
 }
 .content button{
     width: 100px;
-    height: 30px;
+    height: 40px;
     margin-top: 20px;
     margin-left: 200px;
+    margin-bottom: 10px;
+    background-color:#c7dbd5;
+    color:#000
 }
 .content button:hover{
     background-color: rgb(243, 115, 69)
 }
-.content img:hover{
-    height: 250px ;
-    width: 230px;
-}
+
 /* footer */
 .footer{
     /* height: 200px; */
