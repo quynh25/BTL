@@ -157,3 +157,140 @@
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
 }
+.about {
+    padding: 100px 0;
+    width: 100%;
+    position: relative;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 40%;
+    background: #dc965a;
+    z-index: -1;
+}
+
+.img-box {
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    background: #fff5ec;
+    padding: 10px;
+}
+
+.img-box img {
+    max-width: 100%;
+}
+
+.about-me {
+    padding-left: 40px;
+}
+
+.about-me h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #1c1d24;
+    margin-bottom: 15px;
+}
+
+.about-me h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1c1d24;
+    margin-bottom: 20px;
+}
+
+.about-me h5 span {
+    color: #dc965a;
+}
+
+.about-me p {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.about-list {
+    padding: 10px 0 15px;
+}
+
+.about-me .media {
+    padding: 10px 0;
+    line-height: normal;
+}
+
+.media {
+    display: flex !important;
+    align-items: flex-start;
+}
+
+.btn-bar {
+    position: relative;
+}
+
+label {
+    display: inline-block;
+}
+
+.about-me .media label {
+    margin: 0;
+    color: #090a0c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex: 0 0 90px;
+    border-right: 1px solid #c1c1c1;
+    max-width: 90px;
+}
+
+.about-me .media p {
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-size: 1.5rem;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+
+.grid__column-50 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+
+
+.btn {
+    padding: 0 25px;
+    line-height: 46px;
+    display: inline-block;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none!important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.btn.btn-theme {
+    background: #dc965a;
+    color: #fff;
+}
+
+.btn.btn-theme:hover {
+    background: #1c1d24;
+}
