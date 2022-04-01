@@ -1,5 +1,5 @@
 var list = document.querySelector("#list");
-let idChanging
+
 var listTv = [
     {
         id: 01,
@@ -79,7 +79,7 @@ inputExp = document.querySelector("input[name=exp]");
 inputProjec = document.querySelector("input[name=project]");
 inputCv = document.querySelector("input[name=cv]");
 
-// var formAdd = document.querySelector("#formAdd");
+
 
 let add = document.getElementById("add");
 
@@ -123,15 +123,17 @@ add.addEventListener("click", (e) => {
         alert("Điền đầy đủ thông tin");
     }
 });
+// xóa
 function deleteInfo(id){
     listTv = listTv.filter(tv => tv.id != id )
 
     render()
 
 }
+// sửa
 
 function editInfo(id){
-    console.log("Dang xoa dong thu " + id)
+
     let sv = listTv.filter(tv => tv.id == id)[0]
  
     idChanging = id
@@ -146,8 +148,30 @@ function editInfo(id){
         formAdd.classList.remove("none");
         formAdd.classList.add("block");
     } 
-    
+    const editBtn = document.getElementById("edit")
+    editBtn.disabled = false;
 }
+//changing() button của sửa
+let idChanging
+function changing(){
+    let newTv = {
+        id: idChanging,
+        fullname: inputFullName.value,
+        date: inputDate.value,
+        sex: inputSex.value,
+        exp: inputExp.value,
+        project: inputProjec.value,
+        cv: inputCv.value,
+    };
+
+    for( let i = 0 ; i < listTv.length ; i++){
+        if( listTv[i].id == idChanging){
+            listTv[i] = newTv
+        }
+    }
+    render();
+}
+
 render();
 
 

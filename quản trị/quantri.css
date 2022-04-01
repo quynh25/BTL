@@ -74,3 +74,13 @@ i {
 .block {
     display: block;
 }
+
+#add:hover{
+    color: #fff;
+    background-color:#dc965a;
+    
+}
+#edit:hover{
+    color: #fff;
+    background-color:#dc965a;
+} 
