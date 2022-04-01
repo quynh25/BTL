@@ -294,3 +294,83 @@ label {
 .btn.btn-theme:hover {
     background: #1c1d24;
 }
+/* services */
+.services {
+    padding: 100px 0;
+    position: relative;
+    background: #fff5ec;
+}
+
+.services-title {
+    padding-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.services-title h3 {
+    font-size: 4.5rem;
+    color: #1c1d24;
+    position: relative;
+    margin: 0 0 15px;
+}
+
+.services-title h3::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #dc965a;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.services-title p {
+    font-size: 1.7rem;
+}
+
+.feature-box {
+    background: #fff;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    padding: 15% 12%;
+    position: relative;
+    z-index: 1;
+    margin: 12px 0;
+}
+
+.feature-box:hover {
+    background: #dc965a;
+}
+
+.feature-box:hover i, .feature-box:hover h5, .feature-box:hover p {
+    color: #fff;
+}
+
+.feature-box i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #dc965a;
+    transition: .5s ease-in-out;
+}
+
+.feature-box h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+.feature-box p {
+    transition: .5s ease-in-out;
+    font-size: 1.6rem;
+}
+
+.grid__column-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33333333%;
+}
