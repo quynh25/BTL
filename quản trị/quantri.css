@@ -1,10 +1,12 @@
 body {
-    position: relative;
+    /* position: relative; */
     background-color: bisque;
     margin: 0;
 }
 h1 {
     padding: 7px 0px;
+    text-align: center;
+    font-size: 35px;
 }
 .btn {
     margin: 50px 20px 20px 20px;
@@ -18,8 +20,8 @@ table {
     width: 900px;
 }
 
-td {
-    width: 12.5%;
+td{
+    width: 10%;
     text-align: center;
     height: 20px;
 }

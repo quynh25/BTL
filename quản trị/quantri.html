@@ -20,53 +20,84 @@
                 <div>
                     <button id="toggle" class="btn" type="button" onclick="">Thêm mới</button>
                 </div>
-                <h1 style="text-align: center; ">Danh sách CV</h1>
+                <h1 >Danh sách CV</h1>
             </div>
         </div>
         <!--thêm  -->
         <div class="row">
             <div class="col-md-12">
                 <form class="none" id="formAdd" action="">
-                    <table style="width: 350px ; height: 355px; margin : auto">
+                    <table style="width: 350px ; height: 460px; margin : auto;">
                         <tr>
                             <td class="df">
                                 <label for="">Tên thành viên</label>
-                                <input type="text" name="fullname">
-
+                            </td>
+                            <td class="df">
+                                <input type="text" id="name" name="fullname" required>
+                                <span id ="statusOfName" ></span>
                             </td>
                         </tr>
                         <tr>
                             <td class="df">
                                 <label for="">Ngày sinh</label>
+
+                            </td>
+                            <td class="df">
                                 <input type="text" name="date">
                             </td>
                         </tr>
                         <tr>
                             <td class="df">
                                 <label for="">Giới tính</label>
-                                <input type="text" name="sex">
+                            </td>
+                            <td class="df">
+                                <input type="" name="sex">
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="df">
+                                <label for="">Email</label>
+
+                            </td>
+                            <td class="df">
+                                <input id="mail" type="text" name="email">
+                                <span id ="statusOfEmail" ></span>
                             </td>
                         </tr>
                         <tr>
                             <td class="df">
                                 <label for="">Kinh nghiệm</label>
+
+                            </td>
+                            <td class="df">
+
                                 <input type="text" name="exp">
                             </td>
                         </tr>
                         <tr>
                             <td class="df">
                                 <label for="">Dự án</label>
+
+                            </td>
+                            <td class="df">
+
                                 <input type="text" name="project">
                             </td>
                         </tr>
                         <tr>
                             <td class="df">
                                 <label for="">CV</label>
+
+                            </td>
+                            <td class="df">
+
                                 <input type="text" name="cv">
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td colspan="2" style="padding: 8px 0;">
                                 <button id="add" style="width: 100px;" type="button">Thêm</button>
                                 <button id="edit" onclick="changing()" style="width: 100px;" type="button"
                                     disabled>Sửa</button>
@@ -88,6 +119,7 @@
                             <td>Tên thành viên</td>
                             <td>Ngày sinh</td>
                             <td>Giới tính</td>
+                            <td>Email</td>
                             <td>Kinh nghiệm</td>
                             <td>Dự án</td>
                             <td>CV</td>
