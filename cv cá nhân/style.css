@@ -754,3 +754,101 @@ label {
     border: 1px solid #dc965a;
     cursor: pointer;
 }
+
+/* blog */
+.blog {
+    padding: 100px 0;
+    position: relative;
+}
+
+.blog-post .blog-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-post .data {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: #fff;
+    padding: 8px 10px;
+    line-height: 1;
+    text-align: center;
+    z-index: 1;
+}
+
+.blog-post .data span {
+    width: 100%;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0;
+    color: #1c1d24;
+}
+
+.blog-post .data small {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #5e6472;
+    margin-top: 7px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.blog-post .blog-img img {
+    transition: all .35s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    cursor: pointer;
+    width: 100%;
+}
+
+.blog-post .blog-info {
+    padding: 20px;
+    margin: -30px 10px 0;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.blog-post .blog-info h6 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: #1c1d24;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.blog-post .blog-info h6:hover {
+    color: #dc965a;
+}
+
+.blog-post .blog-info p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+}
+
+.blog-post .blog-info .btn-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.blog-post .blog-info .btn-btn:hover {
+    color: #dc965a;
+    text-decoration: underline;
+}
