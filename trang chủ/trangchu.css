@@ -5,17 +5,14 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;   
 }
-
 /* content */
 .title h2{
     margin-top:90px;
     height: 70px; 
        
 }
-
 .content{
     margin-bottom: 80px;
-    
 }
 .column1, .column2, .column3{
     background-color: #fff5Ef;
@@ -23,15 +20,13 @@ body{
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     border-radius: 15px;
     margin-top: 80px;
-  
 }
-
 .cv1,.cv2,.cv3{
     display: flex;
     margin-top:40px;
     font-size: 17px;  
     box-shadow: 0 0 15px rgba(0,0,0,0.3);  
-    /* background-color: rgba(137, 235, 222, 0.3) */
+    
 }
 .content .img img{
     height: 240px ;
@@ -54,17 +49,12 @@ body{
 
 /* footer */
 .footer{
-    /* height: 200px; */
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 50px; */
+   
 }
-
-/* .links{
-    margin-bottom: 25px;
-} */
-
 .school{
    padding: 30px;
    font-size: 17px;

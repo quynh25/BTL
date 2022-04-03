@@ -19,6 +19,27 @@ users=[
 
 
 
+// function login() {
+//     event.preventDefault();
+//     var username = myForm.username.value;
+//     var password = myForm.password.value;
+
+//     var val = check_user(username, password, users)
+//     if(val != false){
+//         var date = new Date();
+//         exp_date = date.getTime() + 10 * 24 * 60 * 60 * 1000;
+//         date.setTime(exp_date);
+//         document.cookie = "username=" + val.username + ";expires=" + date;
+//         document.cookie = "permission=" + val.permission + ";expires=" + date;
+//         if(val.permission == "admin"){
+//             location.href = "đăng nhập/index.html";
+//         }
+//     }
+//     else{
+//         alert("your username or password is incorrect")
+//     }
+// }
+
 function login() {
     event.preventDefault();
     var username = myForm.username.value;
@@ -26,14 +47,7 @@ function login() {
 
     var val = check_user(username, password, users)
     if(val != false){
-        var date = new Date();
-        exp_date = date.getTime() + 10 * 24 * 60 * 60 * 1000;
-        date.setTime(exp_date);
-        document.cookie = "username=" + val.username + ";expires=" + date;
-        document.cookie = "permission=" + val.permission + ";expires=" + date;
-        if(val.permission == "admin"){
-            location.href = "index.html";
-        }
+        location.href = "index.html"
     }
     else{
         alert("your username or password is incorrect")
