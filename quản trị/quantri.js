@@ -215,23 +215,29 @@ function editInfo(id) {
 //changing() button của sửa
 let idChanging;
 function changing() {
-    let newTv = {
-        id: idChanging,
-        fullname: inputFullName.value,
-        date: inputDate.value,
-        sex: inputSex.value,
-        email: inputEmail.value,
-        exp: inputExp.value,
-        project: inputProjec.value,
-        cv: inputCv.value,
-    };
-
-    for (let i = 0; i < listTv.length; i++) {
-        if (listTv[i].id == idChanging) {
-            listTv[i] = newTv;
+    if (checkValue()) {
+        let newTv = {
+            id: idChanging,
+            fullname: inputFullName.value,
+            date: inputDate.value,
+            sex: inputSex.value,
+            email: inputEmail.value,
+            exp: inputExp.value,
+            project: inputProjec.value,
+            cv: inputCv.value,
+        };
+        for (let i = 0; i < listTv.length; i++) {
+            if (listTv[i].id == idChanging) {
+                listTv[i] = newTv;
+            }
         }
+        render();
+    } else {
+        alert("Điền đầy đủ thông tin");
     }
-    render();
+    
+
+   
 }
 
 render();

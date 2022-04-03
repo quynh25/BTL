@@ -17,7 +17,7 @@ h1 {
 }
 table {
     margin: 50px 0px;
-    width: 900px;
+    width: auto;
 }
 
 td{
