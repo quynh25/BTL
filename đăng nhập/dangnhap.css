@@ -8,10 +8,11 @@ body{
    
     width: 100vw;
     height: 100vh;
-    background-image: url("ảnh/anhnen.jpg");
+    background-image: url("ảnh/hinhnen.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+   
     
 }
 
@@ -20,7 +21,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:10%
+    margin-top:10%;
 }
 
 .form-login i{
@@ -33,8 +34,8 @@ form{
     height: 400px;
     background: #fff;
     background: transparent;
-    color: #fff;
-    
+    color: #000;
+
 }
 form h1{
     position:relative;
@@ -57,7 +58,8 @@ form h1::before{
     height: 35px;
     border:2px solid #3498db;
     cursor: pointer;
-    color: #fff;
+    color: #000;
+
     background: transparent;
     font-size: 17px;
     margin-top:10px;
@@ -77,9 +79,11 @@ form h1::before{
     font-size: 16px;
     background: transparent;
     cursor: pointer;
-    color: #fff
+    color: #000;
+
 }
 .form-login input::placeholder{
-    color: #fff
+    color: #000;
+
 }
  
