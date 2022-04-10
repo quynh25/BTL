@@ -9,17 +9,25 @@ h1 {
     font-size: 35px;
 }
 .btn {
-    margin: 50px 20px 20px 20px;
+    margin: 10px 20px 20px 20px;
     width: 100px;
     height: 35px;
     background-color: #dc965a;
     text-align: center;
+    color: white;
+    border: none;
 }
-table {
+.table {
     margin: 50px 0px;
-    width: auto;
+    /* width: auto; */
 }
+.home{
+    color: #1c1d24;
+    text-decoration: none;
+    font-size: 20px;
+  
 
+}
 td{
     width: 10%;
     text-align: center;
@@ -49,10 +57,6 @@ i {
     color: #fff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-}
-.btn {
-    background: #dc965a;
-    color: white;
 }
 
 .btn:hover {
