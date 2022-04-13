@@ -9,7 +9,7 @@ var listTv = [
         email: "nguyenthihuyen09042001@gmail.com",
         exp: "2 năm",
         project: "",
-        cv: "huyen.html",
+        cv: "/huyen.html",
     },
     {
         id: 02,
@@ -19,7 +19,7 @@ var listTv = [
         email: "ttquynh25052002@gmail.com",
         exp: "1 năm",
         project: "",
-        cv: "quynh.html",
+        cv: "/quynh.html",
     },
     {
         id: 03,
@@ -29,7 +29,7 @@ var listTv = [
         email: "xuansky94@gmail.com",
         exp: "5 năm",
         project: "",
-        cv: "xuan.html",
+        cv: "/xuan.html",
     },
 ];
 
@@ -96,12 +96,12 @@ nameOfUser.addEventListener("focus", function () {
 nameOfUser.addEventListener("focusout", removeTextName);
 function removeTextName() {
     if (nameOfUserRegex.test(nameOfUser.value)) {
-        statusOfName.textContent = "Tên không hợp lệ";
+        statusOfName.textContent = "Full name is not valid";
         statusOfName.style.color = "red";
         statusOfName.style.fontSize = "15px";
        
     } else {
-        statusOfName.textContent = "Tên hợp lệ";
+        statusOfName.textContent = "Full name is valid";
         statusOfName.style.color = "blue";
         statusOfName.style.fontSize = "15px";
     }
@@ -118,11 +118,11 @@ mailOfUser.addEventListener("focus", function () {
 mailOfUser.addEventListener("focusout", removeTextEmail);
 function removeTextEmail() {
     if (mailOfUserRegex.test(mailOfUser.value)) {
-        statusOfEmail.textContent = "Email hợp lệ";
+        statusOfEmail.textContent = "Email is valid";
         statusOfEmail.style.color = "blue";
         statusOfEmail.style.fontSize = "15px";
     } else {
-        statusOfEmail.textContent = "Email không hợp lệ";
+        statusOfEmail.textContent = "Email is not valid";
         statusOfEmail.style.color = "red";
         statusOfEmail.style.fontSize = "15px";
     }
@@ -130,7 +130,7 @@ function removeTextEmail() {
 function checkValue() {
 
     if (nameOfUserRegex.test(nameOfUser.value)) {
-        alert("tên nhập sai")
+        alert("Full name is wrong")
         return false;
     }
     if (inputFullName.value =="") {
@@ -139,7 +139,7 @@ function checkValue() {
     }
     // mail
     if (!mailOfUserRegex.test(mailOfUser.value)) {
-        alert("email nhập sai")
+        alert("Email is wrong")
         return false;
     }
     
@@ -181,7 +181,7 @@ add.addEventListener("click", (e) => {
 
         render();
     } else {
-        alert("Điền đầy đủ thông tin");
+        alert("You need to enter all the information");
     }
 });
 
@@ -233,7 +233,7 @@ function changing() {
         }
         render();
     } else {
-        alert("Điền đầy đủ thông tin");
+        alert("You need to enter all the information");
     }
     
 
