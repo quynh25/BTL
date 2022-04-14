@@ -95,7 +95,7 @@ nameOfUser.addEventListener("focus", function () {
 });
 nameOfUser.addEventListener("focusout", removeTextName);
 function removeTextName() {
-    if (nameOfUserRegex.test(nameOfUser.value)) {
+    if (nameOfUserRegex.test(nameOfUser.value) || nameOfUser.value =="") {
         statusOfName.textContent = "Full name is not valid";
         statusOfName.style.color = "red";
         statusOfName.style.fontSize = "15px";
