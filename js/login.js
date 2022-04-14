@@ -24,7 +24,7 @@ function login() {
 
     var val = check_user(username, password, users)
     if(val != false){
-        location.href = "admin.html"
+        location.href = "/admin/admin.html"
     }
     else{
         alert("username or password không đúng")
